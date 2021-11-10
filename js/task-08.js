@@ -9,8 +9,9 @@
       }
       const formData = new FormData(event.currentTarget);
       formData.forEach((value, name) => {
-        console.log(`name: ${name}`);
-        console.log(`value: ${value}`);
+        formData.textcontect = event.currentTarget.input;
+        let a = {name, value};
+        console.log(a);
       });
       form.reset();
-    }
+    };
